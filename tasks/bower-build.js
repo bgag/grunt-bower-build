@@ -92,7 +92,7 @@ module.exports = function (grunt) {
         return;
       }
 
-      htmlImportCss += '<link rel="stylesheet" href="/' + file + '" />\n';
+      htmlImportCss += '<link rel="stylesheet" href="' + file + '" />\n';
 
       fs.writeFileSync(path.join(options.dest, file), code);
     };
@@ -106,7 +106,7 @@ module.exports = function (grunt) {
         return;
       }
 
-      htmlImportJs += '<script src="/' + file + '"></script>\n';
+      htmlImportJs += '<script src="' + file + '"></script>\n';
 
       fs.writeFileSync(path.join(options.dest, file), code);
     };
