@@ -50,7 +50,7 @@ module.exports = function (grunt) {
       jsMatcher = /\.js$/,
       fontMatcher = /\.(eot|otf|svg|ttf|woff)$/,
       options = _.extend(defaultOptions, this.data),
-      dependencies = require('wiredep')(),
+      dependencies = require('wiredep')(options.wiredep),
       done = {};
 
     // fix/extend pathes
@@ -115,6 +115,11 @@ module.exports = function (grunt) {
     var processPackage = function (name, pack) {
       // ignore already processed packages
       if (name in done) {
+        return;
+      }
+
+      // ignore excluded packages
+      if (options.exclude && options.exclude.indexOf(name) !== -1) {
         return;
       }
 
