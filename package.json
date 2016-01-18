@@ -1,7 +1,7 @@
 {
   "name": "grunt-bower-build",
   "description": "bower.json based build",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "homepage": "https://github.com/bgag/grunt-bower-build",
   "license": "MIT",
   "bugs": {
