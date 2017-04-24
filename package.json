@@ -12,7 +12,7 @@
     "url": "git@github.com:bgag/grunt-bower-build.git"
   },
   "dependencies": {
-    "underscore": "1.7.*",
-    "wiredep": "2.0.*"
+    "lodash": "^4.17.4",
+    "wiredep": "^4.0.0"
   }
 }
